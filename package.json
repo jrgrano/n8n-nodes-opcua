@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-opcua",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "OPC UA client node for n8n workflows",
   "license": "MIT",
   "homepage": "https://github.com/jrgrano/n8n-nodes-opcua",
@@ -11,7 +11,10 @@
     "plc",
     "industrial-automation"
   ],
-  "author": { "name": "Emilio Grano Junior", "email": "egjr78@gmail.com" },
+  "author": {
+    "name": "Emilio Grano Junior",
+    "email": "egjr78@gmail.com"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jrgrano/n8n-nodes-opcua.git"
@@ -25,12 +28,21 @@
     "release": "n8n-node release",
     "prepublishOnly": "n8n-node prerelease"
   },
-  "files": ["dist", "docs", "CREDITS.md", "LICENSE"],
+  "files": [
+    "dist",
+    "docs",
+    "CREDITS.md",
+    "LICENSE"
+  ],
   "n8n": {
     "n8nNodesApiVersion": 1,
     "strict": false,
-    "credentials": ["dist/credentials/OpcUaApi.credentials.js"],
-    "nodes": ["dist/nodes/OpcUa/OpcUa.node.js"]
+    "credentials": [
+      "dist/credentials/OpcUaApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/OpcUa/OpcUa.node.js"
+    ]
   },
   "devDependencies": {
     "@n8n/node-cli": "*",
@@ -39,6 +51,10 @@
     "release-it": "^19.0.4",
     "typescript": "5.9.2"
   },
-  "peerDependencies": { "n8n-workflow": "*" },
-  "dependencies": { "node-opcua-client": "^2.177.0" }
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "dependencies": {
+    "node-opcua-client": "^2.177.0"
+  }
 }
